@@ -1,11 +1,5 @@
 # Project: STEDI-Human-Balance-Analytics
 
-## Project Contents
-
-DDL
-Glue_Jobs
-Screenshots
-
 ## Project Summary
 
 The following projects processes step trainer application data using AWS S3, Glue, and Athena. Raw application is taken from fragmented JSON files, loaded into AWS S3 buckets, and processed using AWS Glue and Spark to create a data lakehouse ready to be used for analytics and machine learning.
