@@ -80,13 +80,13 @@ customer_landing_to_trusted.py filters customer landing dataset where sharewithr
 
 Table Name: accelerometer_trusted
 
-accelerometer_landing_to_trusted.py joins accelerometer_landing with customer_trusted to create a trusted accelerometer dataset containing only the accelerometer data from customers who have agreed to share their data for research.
+accelerometer_landing_to_trusted.py joins accelerometer_landing with customer_trusted using the email/username to create a trusted accelerometer dataset containing only the accelerometer data from customers who have agreed to share their data for research.
 
 #### Step Trainer
 
 Table Name: step_trainer_trusted
 
-step_trainer_landing_to_trusted.py joins step_trainer_landing with customer_curated to create a trusted step trainer dataset containing only the step trainer data from customers who have agreed to share their data for research.
+step_trainer_landing_to_trusted.py joins step_trainer_landing with customer_curated using the serial number of the step trainer device to create a trusted step trainer dataset containing only the step trainer data from customers who have agreed to share their data for research.
 
 ### Curated Zone
 
@@ -94,13 +94,13 @@ step_trainer_landing_to_trusted.py joins step_trainer_landing with customer_cura
 
 Table Name: customer_curated
 
-customer_trusted_to_curated.py joins customer_trusted with accelerometer_trusted to create a curated dataset of customers who have agreed to share their data for research purposes and have accelerometer data.
+customer_trusted_to_curated.py joins customer_trusted with accelerometer_trusted using the email/username to create a curated dataset of customers who have agreed to share their data for research purposes and have accelerometer data.
 
 #### Machine Learning
 
 Table Name: machine_learning_curated
 
-step_trainer_trusted_to_curated.py joins step_trainer_trusted and accelerometer_trusted to create a curated dataset using the user and timestamp associated with the relevant step trainer and accelerometer data. The resulting dataset shows all accelerometer and step trainer data at a certain timestamp for customers who have agreed to share their data for research purposes.
+step_trainer_trusted_to_curated.py joins step_trainer_trusted and accelerometer_trusted using the user and timestamp of the step trainer and accelerometer data. The resulting dataset shows a combined view of the accelerometer and step trainer data at a certain timestamp for customers who have agreed to share their data for research purposes.
 
 
 
