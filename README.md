@@ -22,7 +22,7 @@ The STEDI team wants to use the motion sensor data to train a machine learning m
 
 #### Customer
 
-Table Name: customer_curated
+Table Name: customer_landing
 
 Source: Customer registration and order fulfillment data.
 
