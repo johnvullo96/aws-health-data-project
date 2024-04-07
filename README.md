@@ -1,6 +1,10 @@
 # Project: STEDI-Human-Balance-Analytics
 
-## Contents
+## Project Contents
+
+DDL
+Glue_Jobs
+Screenshots
 
 ## Project Summary
 
